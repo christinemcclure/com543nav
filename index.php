@@ -36,10 +36,30 @@
 			opacity: 0.7;
 		}
 
-    nav {
+    nav.wards {
       background:red;
+      overflow:auto;
+      width: 100%;
+      margin: 20px 0;
     }
 
+    nav.wards ul {
+      list-style-type:none;
+      width:100%;
+    }
+
+    nav.wards li {
+      background:none;
+      min-height:50px;
+      float:left;
+      padding: 4px;
+      border: 1px solid black;
+      margin: 1%;
+      width: 6%;
+    }
+    nav.wards ul li:nth-child(10n+1) {
+      clear:left;
+    }
 
 	</style>
 	</head>
@@ -84,22 +104,22 @@
 
 
 
-<nav>
-  <div id="1"></div> <div id="2"></div>  <div id="3"></div>  <div id="4"></div>  <div id="5"></div>
-  <div id="6"></div>  <div id="7"></div>  <div id="8"></div>  <div id="9"></div>  <div id="10"></div>
-  <div id="11"></div>  <div id="12"></div>  <div id="13"></div>  <div id="14"></div>  <div id="15"></div>
-  <div id="16"></div>  <div id="17"></div>  <div id="18"></div>  <div id="19"></div>  <div id="20"></div>
-  <div id="21"></div>  <div id="22"></div>  <div id="23"></div>  <div id="24"></div>  <div id="25"></div>
-  <div id="26"></div>  <div id="27"></div>  <div id="28"></div>  <div id="29"></div>  <div id="30"></div>
-  <div id="31"></div>  <div id="32"></div>  <div id="33"></div>  <div id="34"></div>  <div id="35"></div>
-  <div id="36"></div>  <div id="37"></div>  <div id="38"></div>  <div id="39"></div>  <div id="40"></div>
-  <div id="41"></div>  <div id="42"></div>  <div id="43"></div>  <div id="44"></div>  <div id="45"></div>
-  <div id="46"></div>  <div id="47"></div>  <div id="48"></div>  <div id="49"></div>  <div id="50"></div>
+<nav class="wards">
+  <ul>
+    <li id="1"></li> <li id="2"></li>  <li id="3"></li>  <li id="4"></li>  <li id="5"></li>
+    <li id="6"></li>  <li id="7"></li>  <li id="8"></li>  <li id="9"></li>  <li id="10"></li>
+    <li id="11"></li>  <li id="12"></li>  <li id="13"></li>  <li id="14"></li>  <li id="15"></li>
+    <li id="16"></li>  <li id="17"></li>  <li id="18"></li>  <li id="19"></li>  <li id="20"></li>
+    <li id="21"></li>  <li id="22"></li>  <li id="23"></li>  <li id="24"></li>  <li id="25"></li>
+    <li id="26"></li>  <li id="27"></li>  <li id="28"></li>  <li id="29"></li>  <li id="30"></li>
+    <li id="31"></li>  <li id="32"></li>  <li id="33"></li>  <li id="34"></li>  <li id="35"></li>
+    <li id="36"></li>  <li id="37"></li>  <li id="38"></li>  <li id="39"></li>  <li id="40"></li>
+    <li id="41"></li>  <li id="42"></li>  <li id="43"></li>  <li id="44"></li>  <li id="45"></li>
+    <li id="46"></li>  <li id="47"></li>  <li id="48"></li>  <li id="49"></li>  <li id="50"></li>
+  </ul>
 </nav>
 
 </div><!-- #main -->
-
-
 
 
 </body>
