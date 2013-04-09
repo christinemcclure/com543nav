@@ -43,14 +43,16 @@
       margin: 20px 0;
     }
 
+
+  @media only screen and (min-width: 1000px) {
     nav.wards ul {
       list-style-type:none;
       width:100%;
       margin:0 0 0 6px;
       font-family: 'Arial', 'Helvetica', 'san-serif';
       font-weight:bold;
-      font-size:16px;
-      line-height:18px;
+      font-size:10px;
+      line-height:12px;
     }
 
     nav.wards li {
@@ -64,10 +66,12 @@
       width: 80px;
       height:80px;
     }
-    
+
     nav.wards ul li:nth-child(10n+1) {
       clear:left;
     }
+  }
+
 
 	</style>
 	</head>
@@ -136,6 +140,13 @@
       });
       $('#1').mouseleave(function(){
           $('#1').html('');
+      });
+
+      $('#5').mouseenter(function(){
+          $('#5').html('Ward 5:<br/>Hyde Park, Woodlawn Greater Grand Crossing, and South Shore');
+      });
+      $('#5').mouseleave(function(){
+          $('#5').html('');
       });
 
   });
