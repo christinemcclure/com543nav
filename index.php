@@ -53,7 +53,7 @@
       min-height:50px;
       float:left;
       padding: 4px;
-      border: 1px solid black;
+      border: 1px solid white;
       margin: 1%;
       width: 6%;
     }
@@ -106,7 +106,7 @@
 
 <nav class="wards">
   <ul>
-    <li id="test"></li> <li id="2"></li>  <li id="3"></li>  <li id="4"></li>  <li id="5"></li>
+    <li id="1"></li> <li id="2"></li>  <li id="3"></li>  <li id="4"></li>  <li id="5"></li>
     <li id="6"></li>  <li id="7"></li>  <li id="8"></li>  <li id="9"></li>  <li id="10"></li>
     <li id="11"></li>  <li id="12"></li>  <li id="13"></li>  <li id="14"></li>  <li id="15"></li>
     <li id="16"></li>  <li id="17"></li>  <li id="18"></li>  <li id="19"></li>  <li id="20"></li>
@@ -120,6 +120,17 @@
 </nav>
 
 </div><!-- #main -->
+<script>
+  $(document).ready(function() {
 
+      $('#1').mouseenter(function(){
+          $('#1').html('Ward 1: Logan Square');
+      });
+      $('#1').mouseleave(function(){
+          $('#1').html('');
+      });
+
+  });
+</script>
 </body>
 </html>
