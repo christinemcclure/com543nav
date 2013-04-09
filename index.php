@@ -51,7 +51,7 @@
       margin:0 0 0 6px;
       font-family: 'Arial', 'Helvetica', 'san-serif';
       font-weight:bold;
-      font-size:10px;
+      font-size:12px;
       line-height:12px;
     }
 
@@ -136,7 +136,7 @@
   $(document).ready(function() {
 
       $('#1').mouseenter(function(){
-          $('#1').html('Ward 1:<br/>Logan Square');
+          $('#1').html('Ward 1:<br/><br/>Logan Square');
       });
       $('#1').mouseleave(function(){
           $('#1').html('');
