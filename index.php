@@ -15,7 +15,7 @@
 <link rel='stylesheet' id='content-editable-style-css'  href='http://project.printobject.com/wp-content/plugins/wpcontenteditable/content-editable-style.css?ver=3.5.1' type='text/css' media='all' />
 <link rel='stylesheet' id='tpicker-css'  href='http://project.printobject.com/wp-content/plugins/taxonomy-picker/taxonomy-picker.css?ver=1302062028' type='text/css' media='all' />
 <link rel='stylesheet' id='style-css'  href='http://project.printobject.com/wp-content/themes/book-lite-child/style.css?ver=3.5.1' type='text/css' media='all' />
-<script type='text/javascript' src='http://project.printobject.com/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <style type="text/css" media="print">#wpadminbar { display:none; }</style>
 <style type="text/css" media="screen">
 	html { margin-top: 28px !important; }
@@ -106,7 +106,7 @@
 
 <nav class="wards">
   <ul>
-    <li id="1"></li> <li id="2"></li>  <li id="3"></li>  <li id="4"></li>  <li id="5"></li>
+    <li id="test"></li> <li id="2"></li>  <li id="3"></li>  <li id="4"></li>  <li id="5"></li>
     <li id="6"></li>  <li id="7"></li>  <li id="8"></li>  <li id="9"></li>  <li id="10"></li>
     <li id="11"></li>  <li id="12"></li>  <li id="13"></li>  <li id="14"></li>  <li id="15"></li>
     <li id="16"></li>  <li id="17"></li>  <li id="18"></li>  <li id="19"></li>  <li id="20"></li>
@@ -120,7 +120,6 @@
 </nav>
 
 </div><!-- #main -->
-
 
 </body>
 </html>
