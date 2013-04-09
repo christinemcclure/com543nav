@@ -44,7 +44,7 @@
     }
 
 
-  @media only screen and (min-width: 1000px) {
+  @media screen and (min-width: 1100px) {
     nav.wards ul {
       list-style-type:none;
       width:100%;
