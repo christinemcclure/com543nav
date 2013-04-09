@@ -36,6 +36,10 @@
 			opacity: 0.7;
 		}
 
+    nav {
+      background:red;
+    }
+
 
 	</style>
 	</head>
@@ -81,9 +85,7 @@
 
 
 <nav>
-
-</nav>
-  <div id="1"></div>  <div id="2"></div>  <div id="3"></div>  <div id="4"></div>  <div id="5"></div>
+  <div id="1"></div> <div id="2"></div>  <div id="3"></div>  <div id="4"></div>  <div id="5"></div>
   <div id="6"></div>  <div id="7"></div>  <div id="8"></div>  <div id="9"></div>  <div id="10"></div>
   <div id="11"></div>  <div id="12"></div>  <div id="13"></div>  <div id="14"></div>  <div id="15"></div>
   <div id="16"></div>  <div id="17"></div>  <div id="18"></div>  <div id="19"></div>  <div id="20"></div>
@@ -93,6 +95,8 @@
   <div id="36"></div>  <div id="37"></div>  <div id="38"></div>  <div id="39"></div>  <div id="40"></div>
   <div id="41"></div>  <div id="42"></div>  <div id="43"></div>  <div id="44"></div>  <div id="45"></div>
   <div id="46"></div>  <div id="47"></div>  <div id="48"></div>  <div id="49"></div>  <div id="50"></div>
+</nav>
+
 </div><!-- #main -->
 
 
