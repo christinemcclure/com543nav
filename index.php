@@ -46,17 +46,25 @@
     nav.wards ul {
       list-style-type:none;
       width:100%;
+      margin:0 0 0 6px;
+      font-family: 'Arial', 'Helvetica', 'san-serif';
+      font-weight:bold;
+      font-size:16px;
+      line-height:18px;
     }
 
     nav.wards li {
+      cursor:pointer;
       background:none;
       min-height:50px;
       float:left;
       padding: 4px;
       border: 1px solid white;
-      margin: 1%;
-      width: 6%;
+      margin: 4px;
+      width: 80px;
+      height:80px;
     }
+    
     nav.wards ul li:nth-child(10n+1) {
       clear:left;
     }
@@ -124,7 +132,7 @@
   $(document).ready(function() {
 
       $('#1').mouseenter(function(){
-          $('#1').html('Ward 1: Logan Square');
+          $('#1').html('Ward 1:<br/>Logan Square');
       });
       $('#1').mouseleave(function(){
           $('#1').html('');
