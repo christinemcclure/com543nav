@@ -43,12 +43,10 @@
       margin: 20px 0;
     }
 
-
-  @media screen and (min-width: 1100px) {
     nav.wards ul {
       list-style-type:none;
       width:100%;
-      margin:0 0 0 6px;
+      margin:0 auto;
       font-family: 'Arial', 'Helvetica', 'san-serif';
       font-weight:bold;
       font-size:12px;
@@ -67,6 +65,17 @@
       height:80px;
     }
 
+  @media screen and (max-width: 1099px) {
+    nav.wards ul li:nth-child(5n+1) {
+      clear:left;
+    }
+  }
+
+  
+
+
+
+  @media screen and (min-width: 1100px) {
     nav.wards ul li:nth-child(10n+1) {
       clear:left;
     }
