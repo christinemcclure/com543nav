@@ -38,8 +38,10 @@
 
     nav.wards{
       width:100%;
+      margin: 20px 0;
       background:red;
     }
+
 
     nav .nav-wrapper {
       display:table;
@@ -64,23 +66,23 @@
       min-height:50px;
       float:left;
       padding: 4px;
-      border: 1px solid white;
+      border: 1px solid #333333;
       margin: 4px;
       width: 80px;
       height:80px;
     }
 
-
-    nav.wards ul li:nth-child(5n+1) {
-      clear:left;
+    @media screen and (max-width: 1200px) { /* Don't know why need overlap here, but it works */
+        nav.wards ul li:nth-child(5n+1) {
+          clear:left;
+        }
     }
 
-
-  @media screen and (min-width: 1100px) {
-    nav.wards ul li:nth-child(10n+1) {
-      clear:left;
+    @media screen and (min-width: 1100px) {
+      nav.wards ul li:nth-child(10n+1) {
+        clear:left;
+      }
     }
-  }
 
 
 	</style>
