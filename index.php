@@ -36,6 +36,9 @@
 			opacity: 0.7;
 		}
 
+    .navHover {
+      background: url(nav-bkg-transp.png) repeat !important;
+    }
     nav.wards{
       width:100%;
       margin: 20px 0;
@@ -166,15 +169,19 @@
 
       $('#1').mouseenter(function(){
           $('#1').html('Ward 1:<br/><br/>Logan Square');
+          $('#1').addClass('navHover');
       });
       $('#1').mouseleave(function(){
+          $('#1').removeClass('navHover');
           $('#1').html('');
       });
 
       $('#5').mouseenter(function(){
           $('#5').html('Ward 5:<br/>Hyde Park, Woodlawn Greater Grand Crossing, and South Shore');
+          $('#5').addClass('navHover');
       });
       $('#5').mouseleave(function(){
+          $('#5').removeClass('navHover');
           $('#5').html('');
       });
 
