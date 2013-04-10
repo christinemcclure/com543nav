@@ -70,6 +70,16 @@
       margin: 4px;
       width: 80px;
       height:80px;
+      overflow:hidden;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav.wards li {
+        width:60px;
+        height:60px;
+        font-size:10px;
+        line-height: 11px;
+      }
     }
 
     @media screen and (max-width: 1200px) { /* Don't know why need overlap here, but it works */
