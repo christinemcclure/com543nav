@@ -37,14 +37,14 @@
 		}
 
     .navHover {
-      background: url(nav-bkg-transp.png) repeat !important;
+      background: url(images/nav-bkg-transp.png) repeat !important;
     }
     nav.wards{
       width:100%;
       margin: 20px 0;
       background:red;
       overflow:hidden; /* for background images */
-      background: url(nav-bkg-mobile.jpg) no-repeat center top;
+      background: url(images/nav-bkg-mobile.jpg) no-repeat center top;
     }
 
 
@@ -95,7 +95,7 @@
 
     @media screen and (min-width: 1100px) {
       nav.wards{
-        background: url(nav-bkg-desktop.jpg) no-repeat center top;
+        background: url(images/nav-bkg-desktop.jpg) no-repeat center top;
       }
       nav.wards ul li:nth-child(10n+1) {
         clear:left;
