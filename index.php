@@ -36,25 +36,30 @@
 			opacity: 0.7;
 		}
 
-    nav.wards {
+    nav.wards{
+      width:100%;
       background:red;
-      overflow:auto;
-      width: 100%;
-      margin: 20px 0;
+    }
+
+    nav .nav-wrapper {
+      display:table;
+      margin:0 auto;
     }
 
     nav.wards ul {
-      list-style-type:none;
       width:100%;
-      margin:0 auto;
+      margin:0;
+      list-style-type:none;
       font-family: 'Arial', 'Helvetica', 'san-serif';
       font-weight:bold;
       font-size:12px;
       line-height:12px;
+      text-align: center;
     }
 
     nav.wards li {
       cursor:pointer;
+      display:inline;
       background:none;
       min-height:50px;
       float:left;
@@ -65,14 +70,10 @@
       height:80px;
     }
 
-  @media screen and (max-width: 1099px) {
+
     nav.wards ul li:nth-child(5n+1) {
       clear:left;
     }
-  }
-
-  
-
 
 
   @media screen and (min-width: 1100px) {
@@ -126,18 +127,20 @@
 
 
 <nav class="wards">
-  <ul>
-    <li id="1"></li> <li id="2"></li>  <li id="3"></li>  <li id="4"></li>  <li id="5"></li>
-    <li id="6"></li>  <li id="7"></li>  <li id="8"></li>  <li id="9"></li>  <li id="10"></li>
-    <li id="11"></li>  <li id="12"></li>  <li id="13"></li>  <li id="14"></li>  <li id="15"></li>
-    <li id="16"></li>  <li id="17"></li>  <li id="18"></li>  <li id="19"></li>  <li id="20"></li>
-    <li id="21"></li>  <li id="22"></li>  <li id="23"></li>  <li id="24"></li>  <li id="25"></li>
-    <li id="26"></li>  <li id="27"></li>  <li id="28"></li>  <li id="29"></li>  <li id="30"></li>
-    <li id="31"></li>  <li id="32"></li>  <li id="33"></li>  <li id="34"></li>  <li id="35"></li>
-    <li id="36"></li>  <li id="37"></li>  <li id="38"></li>  <li id="39"></li>  <li id="40"></li>
-    <li id="41"></li>  <li id="42"></li>  <li id="43"></li>  <li id="44"></li>  <li id="45"></li>
-    <li id="46"></li>  <li id="47"></li>  <li id="48"></li>  <li id="49"></li>  <li id="50"></li>
-  </ul>
+  <div class="nav-wrapper">
+    <ul>
+      <li id="1"></li> <li id="2"></li>  <li id="3"></li>  <li id="4"></li>  <li id="5"></li>
+      <li id="6"></li>  <li id="7"></li>  <li id="8"></li>  <li id="9"></li>  <li id="10"></li>
+      <li id="11"></li>  <li id="12"></li>  <li id="13"></li>  <li id="14"></li>  <li id="15"></li>
+      <li id="16"></li>  <li id="17"></li>  <li id="18"></li>  <li id="19"></li>  <li id="20"></li>
+      <li id="21"></li>  <li id="22"></li>  <li id="23"></li>  <li id="24"></li>  <li id="25"></li>
+      <li id="26"></li>  <li id="27"></li>  <li id="28"></li>  <li id="29"></li>  <li id="30"></li>
+      <li id="31"></li>  <li id="32"></li>  <li id="33"></li>  <li id="34"></li>  <li id="35"></li>
+      <li id="36"></li>  <li id="37"></li>  <li id="38"></li>  <li id="39"></li>  <li id="40"></li>
+      <li id="41"></li>  <li id="42"></li>  <li id="43"></li>  <li id="44"></li>  <li id="45"></li>
+      <li id="46"></li>  <li id="47"></li>  <li id="48"></li>  <li id="49"></li>  <li id="50"></li>
+    </ul>
+  </div>
 </nav>
 
 </div><!-- #main -->
