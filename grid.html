@@ -58,9 +58,7 @@
       margin:0;
       list-style-type:none;
       font-family: 'Arial', 'Helvetica', 'san-serif';
-      font-weight:bold;
-      font-size:12px;
-      line-height:12px;
+      font-size:16px;
       text-align: center;
     }
 
@@ -76,6 +74,11 @@
       width: 80px;
       height:80px;
       overflow:hidden;
+    }
+
+    nav.wards .nav-emph {
+      font-size: 60px;
+      margin: 30px 0 0 0;
     }
 
     @media screen and (max-width: 600px) {
@@ -168,7 +171,7 @@
   $(document).ready(function() {
 
       $('#nav1').mouseenter(function(){
-          $('#nav1').html('Ward 1:<br/><br/>Logan Square');
+          $('#nav1').html('Ward<br/><div class=\'nav-emph\'>01</div>');
           $('#nav1').addClass('navHover');
       });
       $('#nav1').mouseleave(function(){
@@ -177,7 +180,7 @@
       });
 
       $('#nav5').mouseenter(function(){
-          $('#nav5').html('Ward 5:<br/>Hyde Park, Woodlawn Greater Grand Crossing, and South Shore');
+          $('#nav5').html('Ward<br/><div class=\'nav-emph\'>05</div>');
           $('#nav5').addClass('navHover');
       });
       $('#nav5').mouseleave(function(){
