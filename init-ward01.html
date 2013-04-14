@@ -172,6 +172,14 @@
 </div><!-- #main -->
 <script>
   $(document).ready(function() {
+      //start with ward 01 initially highlighted and remove when any part of nav is hovered over
+      $('#nav1').addClass('nav-hover');
+      $('#nav1').html('Ward<br/><div class=\'nav-emph\'>01</div>');
+      $('.wards').mouseenter(function(){
+          $('#nav1').removeClass('nav-hover');
+          $('#nav1').html('');
+      });
+      
 
       $('#nav1').mouseenter(function(){
           $('#nav1').html('Ward<br/><div class=\'nav-emph\'>01</div>');
