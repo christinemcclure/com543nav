@@ -131,26 +131,35 @@
 
 	</header><!-- #masthead .site-header -->
 
+
+<body class="home page page-id-856 page-template page-template-custom-post-php logged-in admin-bar no-customize-support no-custom-header no-home">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+
+
+		<hgroup>
+			<h1 class="site-title"><a href="http://project.printobject.com/" title="Chicago June 24, 2012" rel="home">Chicago June 24, 2012</a></h1>
+			<h2 class="site-description"></h2>
+		</hgroup>
+
+<nav role="navigation" class="site-navigation main-navigation">
+			<h1 class="assistive-text">Menu</h1>
+			<div class="assistive-text skip-link"><a href="#main" title="Skip to content">Skip to content</a></div>
+
+			<div id="main-menu" class="menu-simple-menu-container"><ul id="menu-simple-menu" class="menu"><li id="menu-item-526" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-526"><a href="http://project.printobject.com"><span class="contenteditable title" data-pid="856"  ><span class="saver">Home</span></span></a></li>
+<li id="menu-item-530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-530"><a href="http://project.printobject.com/about/"><span class="contenteditable title" data-pid="856"  ><span class="saver">About</span></span></a></li>
+</ul></div>		</nav>
+	</header><!-- #masthead .site-header -->
+
 	<div id="main">
 
 
 
-<article id="post-2" class="post-2 page type-page status-publish hentry">
+
+<article id="post-856" class="post-856 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title"><span class="contenteditable title" data-pid="2"  ><span class="saver">Sample Page</span></span></h1>
+		<h1 class="entry-title"><span class="contenteditable title" data-pid="856"  ><span class="saver"></span></span></h1>
 	</header><!-- .entry-header -->
-
-
-
-
-<div class="entry-content">
-		<span class="contenteditable furniture" data-pid="2"  ><span class="saver"><p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes).</p>
-<p>The chart below is stored in a sidebar widget that was places into the page using the <strong>Widgetize Pages Light</strong> plugin.</p>
-
-</span></span>				<span class="edit-link"><a class="post-edit-link" href="http://project.printobject.com/wp-admin/post.php?post=2&amp;action=edit" title="Edit Page">Edit</a></span>	</div><!-- .entry-content -->
-</article><!-- #post-2 -->
-
-
 
 <nav class="wards">
   <div class="nav-wrapper">
@@ -169,7 +178,11 @@
   </div>
 </nav>
 
-</div><!-- #main -->
+<div class="front">
+  June 24, 2012 saw more violent crimes committed in Chicago than any other day in 2012. The goal of this project is not to answer <em>why</em> this crime occurred, but instead to use the open data available to show <em>what</em> happened on that June 24, 2012. <a href="http://project.printobject.com/about/">More...</a>
+</div>
+
+<div id="find-ward" style="text-align: center;"><a href="https://webapps3.cityofchicago.org/StickerOnlineWeb/pageflows/wardLookUp/WardLookUpController.jpf">Find Your Ward</a></div>
 <script>
   $(document).ready(function() {
       //start with ward 01 initially highlighted and remove when any part of nav is hovered over
@@ -179,27 +192,35 @@
           $('#nav1').removeClass('nav-hover');
           $('#nav1').html('');
       });
-      
 
-      $('#nav1').mouseenter(function(){
-          $('#nav1').html('Ward<br/><div class=\'nav-emph\'>01</div>');
-          $('#nav1').addClass('nav-hover');
-      });
-      $('#nav1').mouseleave(function(){
-          $('#nav1').removeClass('nav-hover');
-          $('#nav1').html('');
-      });
-
-      $('#nav5').mouseenter(function(){
-          $('#nav5').html('Ward<br/><div class=\'nav-emph\'>05</div>');
-          $('#nav5').addClass('nav-hover');
-      });
-      $('#nav5').mouseleave(function(){
-          $('#nav5').removeClass('nav-hover');
-          $('#nav5').html('');
-      });
+     for(var i = 1; i <= 50; i++){
+      (function(){ //must wrap in function or i is always 50 by the time it hits the bind
+        var wardNum=i;
+        var wardNumTxt = "";
+        if (wardNum<10) {
+           wardNumTxt="0" + i; //zero pad 1-9 for cleaner look
+        }
+        else{
+          wardNumTxt=wardNum;
+        }
+        jQuery('#nav'+wardNum).bind({//can only call bind on an element once, so pass multiple events in an array
+          click: function(){
+            window.location='http://project.printobject.com/ward-'+wardNum;
+          },
+          mouseenter: function(){
+            jQuery(this).html('Ward<br/><div class=\'nav-emph\'>'+wardNumTxt+'</div>');
+            jQuery(this).addClass("nav-hover");
+          },
+          mouseleave: function(){
+            jQuery(this).html('');
+            jQuery(this).removeClass("nav-hover");
+          }
+        });//end bind
+      })();//end function
+    }//end for
 
   });
 </script>
+
 </body>
 </html>
