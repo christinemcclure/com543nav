@@ -241,58 +241,21 @@ var ContentEditableSettings = {"content_editable_url":"http:\/\/project.printobj
 <script>
   jQuery(document).ready(function() {
 
-    (function(jQuery){
-      wardMouseEnter=function(ward){
-        jQuery('#nav'+ward).html('Ward<br/><div class=\'nav-emph\'>'+ward+'</div>');
-        jQuery('#nav'+ward).addClass('nav-hover');
-      }
-  	})(jQuery);
-
-    (function(jQuery){
-      wardMouseLeave=function(ward){
-        jQuery('#nav'+ward).html('');
-        jQuery('#nav'+ward).removeClass('nav-hover');
-      }
-  	})(jQuery);
-
-
-//     jQuery('#nav23').mouseenter(function(){
-//          wardMouseEnter(23);
-//     });
-//     jQuery('#nav23').mouseleave(function(){
-//          wardMouseLeave(23);
-//     });
-
-
-//      jQuery(navSelector).mouseenter(function(){
-//          wardMouseEnter(i);
-//      });
-//      jQuery(navSelector).mouseleave(function(){
-//          wardMouseLeave(i);
-//      });
-
     for(var i = 1; i <= 50; i++){
-      (function(){
+      (function(){ //must wrap in function or i is always 50 by the time it hits the bind
         var wardNum = i;
-        jQuery('#nav'+wardNum).bind('mouseenter', function() {
-          wardMouseEnter(wardNum);
-        });
-      })();
-    }
-
-
-//for(var e in data) {
-//    (function() {
-//        var datum = data[e];
-//        suggestList.append(
-//            $('<li>' + datum.name + '</li>')
-//            .click(function() {
-//                $(this).addClass('activeSuggestion');
-//                suggestSelect(suggestField, datum);
-//            });
-//        );
-//    })();
-//}
+        jQuery('#nav'+wardNum).bind({//can only call bind on an element once, so pass multiple events in an array
+          mouseenter: function(){
+            jQuery(this).html('Ward<br/><div class=\'nav-emph\'>'+wardNum+'</div>');
+            jQuery(this).addClass("nav-hover");
+          },
+          mouseleave: function(){
+            jQuery(this).html('');
+            jQuery(this).removeClass("nav-hover");
+          }
+        });//end bind
+      })();//end function
+    }//end for
 
   });
 </script>
