@@ -256,13 +256,43 @@ var ContentEditableSettings = {"content_editable_url":"http:\/\/project.printobj
   	})(jQuery);
 
 
-     jQuery('#nav23').mouseenter(function(){
-          wardMouseEnter(23);
-     });
-     jQuery('#nav23').mouseleave(function(){
-          wardMouseLeave(23);
-     });
+//     jQuery('#nav23').mouseenter(function(){
+//          wardMouseEnter(23);
+//     });
+//     jQuery('#nav23').mouseleave(function(){
+//          wardMouseLeave(23);
+//     });
 
+
+//      jQuery(navSelector).mouseenter(function(){
+//          wardMouseEnter(i);
+//      });
+//      jQuery(navSelector).mouseleave(function(){
+//          wardMouseLeave(i);
+//      });
+
+    for(var i = 1; i <= 50; i++){
+      (function(){
+        var wardNum = i;
+        jQuery('#nav'+wardNum).bind('mouseenter', function() {
+          wardMouseEnter(wardNum);
+        });
+      })();
+    }
+
+
+//for(var e in data) {
+//    (function() {
+//        var datum = data[e];
+//        suggestList.append(
+//            $('<li>' + datum.name + '</li>')
+//            .click(function() {
+//                $(this).addClass('activeSuggestion');
+//                suggestSelect(suggestField, datum);
+//            });
+//        );
+//    })();
+//}
 
   });
 </script>
