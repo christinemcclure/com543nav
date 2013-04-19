@@ -252,6 +252,9 @@ var ContentEditableSettings = {"content_editable_url":"http:\/\/project.printobj
           wardNumTxt=wardNum;
         }
         jQuery('#nav'+wardNum).bind({//can only call bind on an element once, so pass multiple events in an array
+          click: function(){
+            window.location='http://project.printobject.com/ward-'+wardNum;
+          },
           mouseenter: function(){
             jQuery(this).html('Ward<br/><div class=\'nav-emph\'>'+wardNumTxt+'</div>');
             jQuery(this).addClass("nav-hover");
