@@ -243,10 +243,17 @@ var ContentEditableSettings = {"content_editable_url":"http:\/\/project.printobj
 
     for(var i = 1; i <= 50; i++){
       (function(){ //must wrap in function or i is always 50 by the time it hits the bind
-        var wardNum = i;
+        var wardNum=i;
+        var wardNumTxt = "";
+        if (wardNum<10) {
+           wardNumTxt="0" + i; //zero pad 1-9 for cleaner look
+        }
+        else{
+          wardNumTxt=wardNum;
+        }
         jQuery('#nav'+wardNum).bind({//can only call bind on an element once, so pass multiple events in an array
           mouseenter: function(){
-            jQuery(this).html('Ward<br/><div class=\'nav-emph\'>'+wardNum+'</div>');
+            jQuery(this).html('Ward<br/><div class=\'nav-emph\'>'+wardNumTxt+'</div>');
             jQuery(this).addClass("nav-hover");
           },
           mouseleave: function(){
