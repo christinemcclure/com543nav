@@ -74,6 +74,12 @@
       color:rgba(0,0,0,.8);
     }
 
+    .nav-wrapper .init-hover {
+      background:#999999; /* for older IE */
+      background:rgba(255,255,255,.2)!important;
+      color:#555555;
+    }
+
     .nav-hover {
       background:white; /* for older IE */
       background:rgba(255,255,255,.5)!important;
@@ -186,10 +192,10 @@
 <script>
   $(document).ready(function() {
       //start with ward 01 initially highlighted and remove when any part of nav is hovered over
-      $('#nav1').addClass('nav-hover');
+      $('#nav1').addClass('init-hover');
       $('#nav1').html('Ward<br/><div class=\'nav-emph\'>01</div>');
       $('.wards').mouseenter(function(){
-          $('#nav1').removeClass('nav-hover');
+          $('#nav1').removeClass('init-hover');
           $('#nav1').html('');
       });
 
